@@ -28,7 +28,7 @@ ngOnInit(): void {
   this.getAllTodos();
 }
 getAllTodos(){
-  this.todos = this.todoService.getTodos();
+  this.todos = this.todoService.getTodos()
 }
 openSlidePanel(){
   this.isSlidePanelOpen=true;

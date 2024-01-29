@@ -8,6 +8,7 @@ import { constants } from '../constants/CONST';
 export class TokenService {
 
   isAthentication: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  static isAthentication: any;
 
   constructor() { 
     const token = this.getToken();
