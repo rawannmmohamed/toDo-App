@@ -7,7 +7,10 @@
 
     </div>
     <div class="m-8 bg-white shadow">
-        <app-todo-card></app-todo-card>
+        @for (item of todos ; track $index){
+            <app-todo-card [type]="item.status" [todo]="item"></app-todo-card>
+        }
+        
     </div>
 
 </div>
