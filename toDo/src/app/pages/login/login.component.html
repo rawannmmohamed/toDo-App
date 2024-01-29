@@ -1,6 +1,6 @@
 <div class="flex flex-col items-center p-20 bg-gray-700 rounded-lg ">
     <h5 class="text-xl mb-2 font-bold text-white">Login</h5>
-    <form action="" [formGroup]="loginForm"  (ngOnSubmit)="onSubmit()" autocomplete="off" >
+    <form action="" [formGroup]="loginForm"   autocomplete="off" >
 
         <div class="form-group mb-3">
             <label for="" class="text-white w-full">Email Address</label>
@@ -17,7 +17,8 @@
                 <span class="form-error text-red-700"> Password is required</span>
             }
         </div>
-        <button class="rounded-lg bg-white w-100 p-0.5 w-full text-gray-700 font-bold" >
+        
+        <button class="rounded-lg bg-white w-100 p-0.5 w-full text-gray-700 font-bold hover:bg-gray-500" (click)="onSubmit()">
             Login
         </button>
     </form>

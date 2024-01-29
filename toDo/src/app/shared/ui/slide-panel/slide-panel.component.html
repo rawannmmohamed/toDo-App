@@ -1,1 +1,14 @@
-<p>slide-panel works!</p>
+@if(isOpen){
+    <div class="fixed top-0 right-0 bg-gray-900/60 h-screen z-30 w-1/4">
+    <div class="relative right-0 mx-w-md bg-white w-full h-screen shadow" @fadeSlideInRight>
+        <div class="flex relative p-5 justify-between items-center border-b border-gray-200">
+            <h4 class="font-bold text-xl text-gray-700">{{headerText}}</h4>
+            
+        </div>
+        <div class="flex flex-col p-5 ">
+            <ng-content></ng-content>
+        </div>
+    </div>
+
+</div>
+}
